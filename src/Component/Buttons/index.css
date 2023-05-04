@@ -1,0 +1,8 @@
+.wrapper-buttons{
+    background: #FAFAFA;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}

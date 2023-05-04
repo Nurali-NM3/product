@@ -1,9 +1,10 @@
 import React from 'react';
+import List from "../../Component/List";
 
-const productPage = () => {
+const productPage = ({products}) => {
     return (
         <div>
-            product
+            <List products={products}/>
         </div>
     );
 };

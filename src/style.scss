@@ -1,36 +1,9 @@
-header{
+button{
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffff;
-  nav{
-    ul{
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      list-style: none;
-      color: #485362;
-      li{
-        font-size: 18px;
-      }
-    }
-  }
-  div{
-    display: flex;
-    gap: 15px;
-
-    button{
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      background-color: transparent;
-      &:hover{
-        background-color: rgba(92, 107, 115, 0.85);
-        color: #f4fffd;
-      }
-      }
-  }
 }
 
 

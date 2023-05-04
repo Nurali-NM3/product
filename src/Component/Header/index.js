@@ -1,16 +1,16 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-
+import './style.scss'
 const Header = () => {
     return (
        <div className={'container'}>
            <header>
-               <img src={require("../assets/logo-product.png")} alt=""/>
+               <Link to={'/'}><img src={require("../assets/logo-product.png")} alt=""/></Link>
                <nav>
                    <ul>
-                       <li>home</li>
+                       <li><Link to={'/'}>home</Link></li>
                        <li><Link to={'/productPage'}>product</Link></li>
-                       <li>contact us</li>
+                       <li><Link to={'/productPage'}>contact us</Link></li>
                    </ul>
                </nav>
                <div className="wr-btn">

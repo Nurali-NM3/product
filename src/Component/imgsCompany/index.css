@@ -1,0 +1,17 @@
+
+.wrapper-img{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+    padding: 35px 0;
+    margin: 10px 0 30px 0;
+    background: #FFFFFF;
+    box-shadow:
+            0 100px 80px rgba(174, 174, 174, 0.08),
+            0 43.751px 36.4414px rgba(174, 174, 174, 0.0575083),
+            0 19.8401px 19.1406px rgba(174, 174, 174, 0.0476886),
+            0 6.77214px 9.61331px rgba(174, 174, 174, 0.04),
+            0 0.190079px 4.14347px rgba(174, 174, 174, 0.0323114),
+            0 -1.73968px 1.20532px rgba(174, 174, 174, 0.0224916);
+}
