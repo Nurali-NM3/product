@@ -10,14 +10,6 @@ export  const getProduct =()=>{
             })
     }
 }
-export const AddProduct =(value)=>{
-    return (dispatch) =>{
-        console.log(value)
-        axios(`https://64363d318205915d34eec114.mockapi.io/users/${value.products}`)
-            .then(({data}) =>{
-                dispatch({type: ADD_PRODUCT, payload: data})
-
-            })
-
-    }
+export const AddProduct =(value)=> {
+    return {type: ADD_PRODUCT, payload: value}
 }

@@ -1,7 +1,11 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import './style.scss'
+import {useSelector} from "react-redux";
 const Header = () => {
+    const cartsValue =useSelector(state => state.carts)
+    const navigate =useNavigate()
+    console.log(cartsValue)
     return (
        <div className={'container'}>
            <header>
@@ -20,7 +24,7 @@ const Header = () => {
                            <path d="M17 17L13.1333 13.1334" stroke="#030D15" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                        </svg>
                    </button>
-                   <button>
+                   <button onClick={()=>navigate('/productContainPage')}>
                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M6.81815 16.2727C7.21982 16.2727 7.54543 15.9471 7.54543 15.5454C7.54543 15.1438 7.21982 14.8182 6.81815 14.8182C6.41649 14.8182 6.09088 15.1438 6.09088 15.5454C6.09088 15.9471 6.41649 16.2727 6.81815 16.2727Z" stroke="#030D15" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                            <path d="M14.8182 16.2727C15.2198 16.2727 15.5454 15.9471 15.5454 15.5454C15.5454 15.1438 15.2198 14.8182 14.8182 14.8182C14.4165 14.8182 14.0909 15.1438 14.0909 15.5454C14.0909 15.9471 14.4165 16.2727 14.8182 16.2727Z" stroke="#030D15" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

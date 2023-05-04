@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './style.scss'
 import Buttons from "../Buttons";
 import {useDispatch, useSelector} from "react-redux";
@@ -6,11 +6,10 @@ import {AddProduct} from "../../redux/action/productAction";
 
 
 const List = ({products}) => {
-const [product,setProduct] = useState([])
     const cards = useSelector(state => state.cards)
     const dispatch = useDispatch()
     const handleAdd =(p)=>{
-         const value = {cards,p}
+         const value = {cards}
         dispatch(AddProduct(value))
     }
     return (
@@ -23,7 +22,7 @@ const [product,setProduct] = useState([])
                                 <p className={"productList-box__discount"}>Get up to {product.discount}% off Today Only!</p>
                                 <img className={'productList-box__img'} src={product.imageUrl} alt=""/>
                                     <div className="productList-box__action">
-                                        <Buttons handleAdd={handleAdd} products={product} />
+                                        <Buttons handleAdd={()=>dispatch(AddProduct(product))} products={product} />
                                     </div>
                                 <div className="productList-box__description">
                                     <h3>{product.productName}</h3>
