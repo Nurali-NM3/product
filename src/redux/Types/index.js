@@ -1,2 +1,4 @@
 export const GET_PRODUCT = 'GET_PRODUCT'
 export const ADD_PRODUCT = 'ADD_PRODUCT'
+export const INCREASE_AMOUNT = 'INCREASE_AMOUNT'
+export const DECREASE_AMOUNT = 'DECREASE_AMOUNT'

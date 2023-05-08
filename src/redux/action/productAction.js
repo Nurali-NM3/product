@@ -1,5 +1,5 @@
 import axios from "axios";
-import {ADD_PRODUCT, GET_PRODUCT} from "../Types";
+import {ADD_PRODUCT, DECREASE_AMOUNT, GET_PRODUCT, INCREASE_AMOUNT} from "../Types";
 
 
 export  const getProduct =()=>{
@@ -10,6 +10,13 @@ export  const getProduct =()=>{
             })
     }
 }
-export const AddProduct =(value)=> {
+export const addProduct =(value)=> {
     return {type: ADD_PRODUCT, payload: value}
+}
+
+export const increaseAmount =(id)=>{
+    return {type:INCREASE_AMOUNT, payload:id}
+}
+export const decreaseAmount =(id)=>{
+    return{type: DECREASE_AMOUNT,payload:id}
 }

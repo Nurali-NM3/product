@@ -37,6 +37,20 @@ header{
       border-radius: 5px;
       cursor: pointer;
       background-color: transparent;
+      position: relative;
+      span{
+        font-size: 10px;
+        background-color: #C72535;
+        position: absolute;
+        width:13px;
+        padding-top:1px;
+        text-align: center;
+        height: 13px;
+        color: #f4fffd;
+        border-radius: 5px;
+        top: 4px;
+        right: -5px;
+      }
     }
   }
 }
